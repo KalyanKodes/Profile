@@ -232,6 +232,9 @@ a:hover{
     .projectCards{
         padding: 40px;
     }
+    .roleName{
+        font-size: 13px;
+    }
 }
 
 @media (max-width:360px) {
