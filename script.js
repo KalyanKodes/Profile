@@ -40,7 +40,7 @@ showProjectsElement.addEventListener('click' , ()=>{
 
 function renderRole(){
     var typed = new Typed(roleName , {
-        strings: ["Student" , "Freelancer" , "Front-End Web Developer"],
+        strings: ["Student" , "Freelancer" , "Front-End WebDeveloper"],
         typeSpeed: 100,
         backSpeed: 0,
         loop: true
