@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #1B1D2A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.profileOuterContainer{
+    width: auto;
+    height: 500px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.profileImageSection{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profileImage{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.profileId{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.profileDetailsSection{
+    width: 550px;
+    height: 500px;
+
+}
+
+.showProjects{
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    background-color: #364399;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+
+
+.greeting , .role{
+    color: #FFF;
+    font-weight: 900;
+    font-size: 40px;
+    margin: 10px 0  ;
+}
+
+
+.role{
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.role span{
+    margin: 0 0 0 10px;
+    color: #854CE6;
+}
+.description{
+    margin: 30px 0;
+    color: #97907E;
+    font-size: 20px;
+}
+
+
+.wrapper{
+/*  */
+    background-color: rgba(27, 29, 42 , .8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    /* overflow: hidden; */
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+
+.projectCards{
+    position: relative;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(37, 37, 27 , .7);
+    transition: .4s;
+    color: #FFF;
+    padding: 40px;
+    /* display: flex; */
+    overflow: auto;
+}
+
+
+
+.wrapper.show{
+    display: flex;
+}
+
+
+/* Hide scroll bars for webkit-based browsers */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+    /* margin: 40px 0; */
+    cursor: pointer;
+}
+a:hover{
+    color: yellow;
+}
+
+
+
+
+.githubProjects{
+    display: none;
+    flex-direction: column;
+}
+
+.githubProjects li a{
+    margin: 10px 0 10px 30px;
+    font-size: 15px;
+}
+
+.githubProjects.show{
+    display: flex;
+}
+
+.fa-circle-xmark{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor:pointer;
+}
+
+
+@media (max-width:1200px) {
+    .profileOuterContainer{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .greeting{
+        font-size: 25px;
+    }
+    .profileImage{
+        width: 300px;
+        height: 300px;
+    }
+    .profileId{
+        font-size: 20px;
+    }
+    .profileDetailsSection{
+        width: 380px;
+    }
+    .role{
+        font-size: 16px;
+    }
+
+    .description{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:400px) {
+    .profileDetailsSection{
+        width: 300px;
+    }
+    .description{
+        font-size: 15px;
+    }
+    .profileImage{
+        width: 250px;
+        height: 250px;
+    }
+    .profileId{
+        font-size: 15px;
+    }
+    .showProjectsButton{
+        padding: 5px;
+    }
+    .projectCards{
+        width: 350px;
+    }
+    .projectCards{
+        padding: 40px;
+    }
+}
+
+@media (max-width:360px) {
+    .profileDetailsSection{
+        width: 250px;
+    }
+    .projectCards{
+        width: 300px;
+    }
+}
